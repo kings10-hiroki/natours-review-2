@@ -7,6 +7,7 @@ process.on('uncaughtException', err => {
     process.exit(1);
 });
 
+// envファイルの読み込み
 dotenv.config({ path: './config.env' });
 
 const app = require('./app');
